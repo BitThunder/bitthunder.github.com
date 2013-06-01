@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: BitThunder Blog
+title: Blog
 permalink: /blog/home/
 ---
 
@@ -12,4 +12,3 @@ permalink: /blog/home/
     </li>
   {% endfor %}
 </ul>
-
