@@ -2,7 +2,6 @@
 layout: docs
 title: License
 prev_section: usage-rules
-next_section: installation
 permalink: /docs/license/
 ---
 Copyright (c) 2013, James Walmsley
