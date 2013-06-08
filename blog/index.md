@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: Blog
+title: BitThunder Blog
 permalink: /blog/home/
 ---
 
