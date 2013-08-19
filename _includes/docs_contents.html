@@ -17,12 +17,37 @@
     </ul>
 	<h4>API</h4>
 	<ul>
+
+	  <li class="{% if page.title == "Device Manager" %}current{% endif %}">
+        <a href="{{ site.url }}/docs/api/devices">Device Manager</a>
+      </li>
+
+	  <li class="{% if page.title == "File-system" %}current{% endif %}">
+        <a href="{{ site.url }}/docs/api/fs">File-system</a>
+      </li>
+
 	  <li class="{% if page.title == "GPIO Subsystem" %}current{% endif %}">
         <a href="{{ site.url }}/docs/api/gpio">GPIO Subsystem</a>
       </li>
 
+	  <li class="{% if page.title == "I2C Subsystem" %}current{% endif %}">
+        <a href="{{ site.url }}/docs/api/i2c">I2C Subsystem</a>
+      </li>
+
 	  <li class="{% if page.title == "Processes and Threads" %}current{% endif %}">
         <a href="{{ site.url }}/docs/api/process">Processes and Threads</a>
+      </li>
+
+	  <li class="{% if page.title == "RTC Subsystem" %}current{% endif %}">
+        <a href="{{ site.url }}/docs/api/rtc">RTC Subsystem</a>
+      </li>
+
+	  <li class="{% if page.title == "Semaphores & Mutex's" %}current{% endif %}">
+        <a href="{{ site.url }}/docs/api/semaphore">Semaphores & Mutex's</a>
+      </li>
+
+	  <li class="{% if page.title == "Watchdog" %}current{% endif %}">
+        <a href="{{ site.url }}/docs/api/watchdog">Watchdog</a>
       </li>
 	</ul>
   </aside>
