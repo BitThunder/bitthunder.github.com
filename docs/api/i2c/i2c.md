@@ -31,7 +31,7 @@ The following table lists all functions related to the I2C subsystem API.
     </tr>
 
 	<tr>
-      <td><p><code><a href="{{ site.url }}/docs/api/i2c/bt_i2c_mastersend/">BT_I2C_MasterSend</a></code></p></td>
+      <td><p><code><a href="{{ site.url }}/docs/api/i2c/bt_i2c_mastersend/">BT_I2C_MasterSend()</a></code></p></td>
       <td><p>
 		Sends data to an I2C_CLIENT.
       </p></td>
