@@ -3,8 +3,8 @@ layout: docs
 title: Memory Manager
 next_section: usage-rules
 permalink: /docs/api/mm/
-header_path: os/include/mm/bt_mm.h
-source_path: os/src/mm/bt_mm.c
+header_path: os/include/syslog/bt_printk.h
+source_path: os/src/syslog/bt_printk.c
 ---
 
 The memory manager is responsible for managing all memory within BitThunder. For systems with MMU's the mm,
