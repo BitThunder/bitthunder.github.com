@@ -1,15 +1,15 @@
 ---
 layout: docs
-title: File-system
+title: File I/O
 next_section: usage-rules
-permalink: /docs/api/fs/
-header_path: os/include/fs/bt_fs.h
-source_path: os/src/fs/bt_fs.c
+permalink: /docs/api/fs/file/
+header_path: os/include/fs/bt_file.h
+source_path: os/src/fs/bt_file.c
 ---
 
 # User-space API
 
-The following table lists all functions related to the file-system manager API.
+The following table lists all functions related to using open File HANDLE's.
 
 <div class="mobile-side-scroller">
 <table>
@@ -22,23 +22,23 @@ The following table lists all functions related to the file-system manager API.
   <tbody>
 
 	<tr>
-      <td><p><code><a href="{{ site.url }}/docs/api/fs/bt_open/">BT_Open()</a></code></p></td>
+      <td><p><code><a href="{{ site.url }}/docs/api/fs/bt_read/">BT_Read()</a></code></p></td>
       <td><p>
-		Opens a handle to an object (file/device/fifo/socket ...) from the Virtual File-system.
+		Reads data from the specified file handle.
       </p></td>
     </tr>
 
 	<tr>
-      <td><p><code><a href="{{ site.url }}/docs/api/fs/bt_opendir/">BT_OpenDir()</a></code></p></td>
+      <td><p><code><a href="{{ site.url }}/docs/api/fs/bt_write/">BT_Write()</a></code></p></td>
       <td><p>
-		Opens a BT_HANDLE to a directory like object for traversing.
+		Writes data to the specified file handle.
       </p></td>
     </tr>
 
 	<tr>
-      <td><p><code><a href="{{ site.url }}/docs/api/fs/bt_getinode/">BT_GetInode()</a></code></p></td>
+      <td><p><code><a href="{{ site.url }}/docs/api/fs/bt_getc/">BT_GetC()</a></code></p></td>
       <td><p>
-		Get a BT_HANDLE for the i-Node associated with the specified path.
+		Get a character from the specified file handle.
       </p></td>
     </tr>
 

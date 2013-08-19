@@ -18,12 +18,20 @@
 	<h4>API</h4>
 	<ul>
 
+	  <li class="{% if page.title == "Overview" %}current{% endif %}">
+        <a href="{{ site.url }}/docs/api/overview">Overview</a>
+      </li>
+
 	  <li class="{% if page.title == "Device Manager" %}current{% endif %}">
         <a href="{{ site.url }}/docs/api/devices">Device Manager</a>
       </li>
 
 	  <li class="{% if page.title == "File-system" %}current{% endif %}">
         <a href="{{ site.url }}/docs/api/fs">File-system</a>
+      </li>
+
+	  <li class="{% if page.title == "File I/O" %}current{% endif %}">
+        <a href="{{ site.url }}/docs/api/fs/file">File I/O</a>
       </li>
 
 	  <li class="{% if page.title == "GPIO Subsystem" %}current{% endif %}">
