@@ -26,29 +26,67 @@ The following table lists all functions related to the Mutex API.
   <tbody>
 
 	<tr>
-      <td><p><code><a href="{{ site.url }}/api/process/bt_createprocess/">BT_CreateProcess()</a></code></p></td>
+      <td><p><code><a href="{{ site.url }}/api/semaphore/bt_createmutex">BT_CreateMutex()</a></code></p></td>
       <td><p>
-		Creates a BitThunder process.
+		Creates a mutex, and returns a handle to the mutex object.
       </p></td>
     </tr>
 
 	<tr>
-      <td><p><code><a href="{{ site.url }}/api/process/bt_destroyprocess/">BT_DestroyProcess()</a></code></p></td>
+      <td><p><code><a href="{{ site.url }}/api/semaphore/bt_pendmutex/">BT_PendMutex()</a></code></p></td>
       <td><p>
-		Destroys a BitThunder process.
+		Causes the current thread to sleep until the specified mutex is released / signalled.
       </p></td>
     </tr>
 
 	<tr>
-      <td><p><code><a href="{{ site.url }}/api/process/bt_getprocesshandle/">BT_GetProcessHandle()</a></code></p></td>
+      <td><p><code><a href="{{ site.url }}/api/semaphore/bt_releasemutex/">BT_ReleaseMutex()</a></code></p></td>
       <td><p>
-		Gets the handle of the current process.
+		Releases (signals) the specified mutex.
+      </p></td>
+    </tr>
+
+	<tr>
+      <td><p><code><a href="{{ site.url }}/api/semaphore/bt_pendmutexrecursive/">BT_PendMutexRecursive()</a></code></p></td>
+      <td><p>
+		Causes the current thread to sleep until the specified mutex is released. Does not block if current thread owns the mutex.
+      </p></td>
+    </tr>
+
+	<tr>
+      <td><p><code><a href="{{ site.url }}/api/semaphore/bt_releasemutexrecursive/">BT_ReleaseMutexRecursive()</a></code></p></td>
+      <td><p>
+		Releases a recursive mutex.
       </p></td>
     </tr>
 
   </tbody>
 </table>
 </div>
+
+# Mutex Kernel Mode API
+
+<div class="mobile-side-scroller">
+<table>
+  <thead>
+    <tr>
+      <th>API</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+
+	<tr>
+      <td><p><code><a href="{{ site.url }}/api/semaphore/bt_releasemutexfromisr/">BT_ReleaseMutexFromISR()</a></code></p></td>
+      <td><p>
+		Releases a Mutex from an ISR context.
+      </p></td>
+    </tr>
+
+  </tbody>
+</table>
+</div>
+
 
 # Semaphore API
 
