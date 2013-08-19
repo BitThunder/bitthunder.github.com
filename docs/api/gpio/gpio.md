@@ -28,7 +28,7 @@ GPIO by mistake.
 
 # User-space API
 
-The following table lists all functions related to the process manager API.
+The following table lists all functions related to the GPIO subsystem API.
 
 <div class="mobile-side-scroller">
 <table>
