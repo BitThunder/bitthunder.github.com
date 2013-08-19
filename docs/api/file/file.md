@@ -46,44 +46,6 @@ The following table lists all functions related to using open File HANDLE's.
 </table>
 </div>
 
-# Kernel-mode API
-
-<div class="mobile-side-scroller">
-<table>
-  <thead>
-    <tr>
-      <th>API</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-
-	<tr>
-      <td><p><code><a href="{{ site.url }}/docs/api/fs/bt_registerfilesystem/">BT_RegisterFilesystem()</a></code></p></td>
-      <td><p>
-		Registers a file-system with the file-system manager.
-      </p></td>
-    </tr>
-
-	<tr>
-      <td><p><code><a href="{{ site.url }}/docs/api/fs/bt_mount/">BT_Mount()</a></code></p></td>
-      <td><p>
-		Attempts to mount a file-system on the specified block-device. (Usually a Volume Handle).
-      </p></td>
-    </tr>
-
-  </tbody>
-</table>
-</div>
-
-# Design Overview
-
-The filesystem is designed to provide a simple abstraction across all filesystems. Usually this means
-a block based filesystem like FAT (FullFAT) or EXT, but can also be for pseudo-filesystems like the device
-manager's devfs implementation.
-
-
-
 # Further Reading
 
 The full API is defined under:

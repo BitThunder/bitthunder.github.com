@@ -83,7 +83,6 @@ a block based filesystem like FAT (FullFAT) or EXT, but can also be for pseudo-f
 manager's devfs implementation.
 
 
-
 # Further Reading
 
 The full API is defined under:
@@ -98,3 +97,4 @@ See the driver interface under:
 
 <a href="{{ site.gh-blob-url }}/os/include/interfaces/bt_if_fs.h"><code>os/include/interfaces/bt_if_fs.h</code></a>
 <a href="{{ site.gh-blob-url }}/os/include/interfaces/bt_if_file.h"><code>os/include/interfaces/bt_if_file.h</code></a>
+<a href="{{ site.gh-blob-url }}/os/include/interfaces/bt_if_dir.h"><code>os/include/interfaces/bt_if_dir.h</code></a>
