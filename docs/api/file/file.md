@@ -42,6 +42,34 @@ The following table lists all functions related to using open File HANDLE's.
       </p></td>
     </tr>
 
+	<tr>
+      <td><p><code><a href="{{ site.url }}/docs/api/fs/bt_putc/">BT_PutC()</a></code></p></td>
+      <td><p>
+		Write a character to the specified file handle.
+      </p></td>
+    </tr>
+
+	<tr>
+      <td><p><code><a href="{{ site.url }}/docs/api/fs/bt_seek/">BT_Seek()</a></code></p></td>
+      <td><p>
+		Seeks the file offset pointer of the specified file handle.
+      </p></td>
+    </tr>
+
+	<tr>
+      <td><p><code><a href="{{ site.url }}/docs/api/fs/bt_tell/">BT_Tell()</a></code></p></td>
+      <td><p>
+		Gets the current position of the file offset pointer of the specified file handle.
+      </p></td>
+    </tr>
+
+	<tr>
+      <td><p><code><a href="{{ site.url }}/docs/api/fs/bt_gets/">BT_GetS()</a></code></p></td>
+      <td><p>
+		Gets a string (a line) from the specified file handle.
+      </p></td>
+    </tr>
+
   </tbody>
 </table>
 </div>
