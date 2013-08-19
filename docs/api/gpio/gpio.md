@@ -94,3 +94,34 @@ The following table lists all functions related to the process manager API.
   </tbody>
 </table>
 </div>
+
+# Design Overview
+
+The BitThunder GPIO subsystem is simple, and all operations on a standard system are relatively cheap. There is
+an O(n) cost, where n = number of registered GPIO controllers, to resolve GPIO numbers to the correct driver
+implementation.
+
+The GPIO api is not meant to be a high-performance API for doing bit-banging, or accurately timed PWM signals,
+bit mostly for setting board MUXs, or LEDs, or chip-selects.
+
+Those wanting to do high-performance GPIO access should write a driver that utilises the GPIO registers
+directly in kernel-mode. E.g. a bit-banged I2C bus driver should be implemented directly.
+
+# Interrupts
+
+The driver interface implements interrupt hooking, and this will be later exposed to user-space and other kernel-mode
+drivers.
+
+# Further Reading
+
+The full API is defined under:
+
+{% include api/header-path.md %}
+
+See the implementation under:
+
+{% include api/source-path.md %}
+
+See the driver interface under:
+
+<a href="{{ site.gh-blob-url }}/os/include/interfaces/bt_dev_if_gpio.h"><code>os/include/interfaces/bt_dev_if_gpio.h</code></a>
