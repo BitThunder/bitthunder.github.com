@@ -3,6 +3,8 @@ layout: docs
 title: Processes and Threads
 next_section: usage-rules
 permalink: /docs/api/process/
+header_path: os/include/gpio/bt_gpio.h
+source_path: os/src/gpio/bt_gpio.c
 ---
 
 The process manager is responsible for keeping track of all processes in the system, and
@@ -97,3 +99,30 @@ The following table lists all functions related to the process manager API.
   </tbody>
 </table>
 </div>
+
+# Kernel-space / Driver API
+
+# Design Overview
+The primary object of execution in BitThunder is a thread. A process is simply an abstraction that allows the grouping
+of 1 or more threads together into a system (or application).
+
+A process usually takes responsibility for a major task in a BitThunder system, and should require little or no
+communication with other processes. Although there are some IPC constructs available.
+
+Processes always contain at least 1 thread,
+
+On full-featured platforms (like Xilinx Zynq) this abstraction can be optionally enforced by enabling MMU and virtual memory
+support. In such cases, attempts to access pointers in memory not allocated to that process will result in a seg-mentation fault
+and the process will be closed and all resources free'd and cleaned.
+
+If configured, a BitThunder process can be restarted automatically by the BitThunder watchdog system.
+
+# Further Reading
+
+The full API is defined under:
+
+{% include api/header-path.md %}
+
+See the implementation under:
+
+{% include api/source-path.md %}
