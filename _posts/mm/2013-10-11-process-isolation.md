@@ -15,3 +15,6 @@ much faster and more simple implementation.
 
   * VM Manager allowing full isolation of process memory contexts.
   * Improved page allocator.
+
+# VM Manager sub-system.
+
