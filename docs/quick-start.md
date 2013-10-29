@@ -47,7 +47,16 @@ make
 sudo make install
 {% endhighlight %}
 
-You may also need libreadline, libncurses and libcurses installed to build.
+### Debian / Ubuntu Package List
+build-essentials
+autoconf
+libtool
+gperf
+flex
+bison
+libncurses-dev
+
+sudo ldconfig
 
 # Building BitThunder
 
