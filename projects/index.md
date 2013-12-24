@@ -22,6 +22,14 @@ permalink: /projects/home/
 
       </p></td>
     </tr>
+	    <tr>
+      <td><p><code><a href="http://thundercat.bitthunder.org/">ThunderCat</a></code></p></td>
+      <td><p>
+
+		An example kernel capable of running user-mode applications.
+
+      </p></td>
+    </tr>
   </tbody>
 </table>
 </div>
