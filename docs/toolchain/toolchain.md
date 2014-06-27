@@ -11,6 +11,7 @@ on Github.
 
 {% highlight bash %}
 ~ $ git clone git@github.com:bitthunder-toolchain/btdk.git
+~ $ git submodule update --init
 # Modify Makefile variables to suit.
 ~ $ make -j32
 {% endhighlight %}
