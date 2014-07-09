@@ -7,6 +7,9 @@ permalink: /docs/toolchain/
 The BitThunder toolchain, BTDK (BitThunder Development Kit) is now available
 on Github.
 
+# NEWS: BTDK for Windows available imminently.
+I'll be looking at getting the build environment and toolchain working on Apple's OSX very shortly.
+
 ## Quick Build Instructions
 
 {% highlight bash %}
@@ -43,4 +46,7 @@ Under Build System set toolchain-prefix to:
 	/opt/btdk/arm-eabi-bitthunder-
 
 
-	
+# Windows
+
+I'm just preparing an installer for the Windows BTDK release. I'll be providing the latest user-space and kernel-mode compilers.
+I shall also provide a vanilla compiler for those who want to do bare-metal programming.
