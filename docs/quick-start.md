@@ -8,6 +8,14 @@ permalink: /docs/quick-start/
 This guide will attempt to provide a guide to getting bitthunder building on your development system.
 The guide is based around the RaspberryPi, but should be very similar for all other supported platforms.
 
+<div class="note info">
+  <h5>RaspberryPi Tutorial -- READ THIS</h5>
+  <p>Richard Weiss has created an excellent tutorial on how to use and develop with BitThunder on the Pi.
+	It is much more up-to-date than the instructions detailed here. Many thanks Richard!
+	<a href="http://blog.richardweiss.org/2015/06/27/raspberry-pi-bitthunder.html">richardweiss.org</a>
+  </p>
+</div>
+
 # Cloning BitThunder
 
 You can clone the latest sources from:
